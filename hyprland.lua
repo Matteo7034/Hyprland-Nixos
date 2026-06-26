@@ -45,7 +45,7 @@ local menu        = "wofi --show drun"
 --
 hl.on("hyprland.start", function ()
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=Hyprland")
-    hl.exec_cmd("hyprpaper -c ~/Mhyprland7034/hypr/hyprpaper.conf")
+    hl.exec_cmd("hyprpaper -c ~/.config/hypr/hyprpaper.conf")
     hl.exec_cmd("waybar -c ~/.config/hypr/waybar/config.jsonc -s ~/.config/hypr/waybar/style.css")
     hl.exec_cmd("nm-applet")
     hl.exec_cmd("blueman-applet")
