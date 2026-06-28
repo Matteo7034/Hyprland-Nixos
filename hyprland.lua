@@ -61,6 +61,8 @@ hl.on("hyprland.start", function ()
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("MOZ_ENABLE_WAYLAND", "1")
+hl.env("GTK_THEME", "Adwaita:dark")
+hl.env("GTK_APPLICATION_PREFER_DARK_THEME", "1")
 
 -----------------------
 ----- PERMISSIONS -----
@@ -272,7 +274,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("~/Mhyprland7034/scripts/shot"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("~/.config/hypr/scripts/shot"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
